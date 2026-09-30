@@ -1,0 +1,148 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --orange: #ff6600;
+    --dark: #1b1b1b;
+    --dark-gray: #292929;
+    --white: #fff;
+}
+
+header, 
+footer {
+    background: var(--dark);
+    color: #ccc;
+}
+
+header {
+    padding: 15px 30px;
+    color: var(--white);
+}
+
+footer {
+    padding: 35px 30px 15px;
+}
+
+.navbar, 
+.menu, 
+.descripcion, 
+.flex-calculadoras, 
+.campo, 
+.filtros, 
+.rutina-imagen, 
+.panel-accesibilidad, 
+.panel-accesibilidad button, 
+.panel-accesibilidad a {
+    display: flex;
+}
+
+.navbar, 
+.menu, 
+.filtros {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navbar, 
+.menu {
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.logo span {
+    color: var(--white);
+}
+
+.menu li a {
+    font-weight: 600;
+    padding: 8px 5px;
+    transition: color 0.2s;
+}
+
+.menu li a:hover, 
+.menu li a.activo {
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
+}
+
+.descripcion, 
+.titulo-pagina {
+    background: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+}
+
+.descripcion {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.titulo-pagina {
+    padding: 40px 20px;
+}
+
+.descripcion h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.titulo-pagina h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.descripcion p {
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.btn, 
+.caja-calc button, 
+.saltar {
+    background: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 12px 28px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e65c00;
+}
